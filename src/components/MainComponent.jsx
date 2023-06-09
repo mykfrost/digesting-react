@@ -12,15 +12,15 @@ class MainComponent extends Component {
       <div className="container">
         <h1 className="h1">Hello World</h1>
         <p>Learning to code with React</p>
-        <ul>
-          {users.map(function (user) {
+        <ol>
+          {users.map(function (user, index) {
             return (
-              <li key={user.id}>
+              <li key={index}>
                 {user.name} as the {user.role}
               </li>
             );
           })}
-        </ul>
+        </ol>
       </div>
     );
   }
