@@ -15,7 +15,7 @@ class MainComponent extends Component {
         <ul>
           {users.map(function (user) {
             return (
-              <li>
+              <li key={user.id}>
                 {user.name} as the {user.role}
               </li>
             );
